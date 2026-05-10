@@ -13,7 +13,6 @@ async function getQuote() {
 
         let random;
 
-        // Avoid repeating same quote
         do {
             random = data[Math.floor(Math.random() * data.length)];
         } while (random.text === lastQuote);
